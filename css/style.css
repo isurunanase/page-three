@@ -29,7 +29,9 @@ h1, p{
     margin-right: auto;
     display: flex; 
     justify-content: center;
-    align-items: center
+    /* align-items: center */
+    align-items: flex-start;
+    position: relative;
 }
 .page4 .box{
     width: 341px;
@@ -37,7 +39,8 @@ h1, p{
     vertical-align: center;
     justify-content: center;
     background-color:#ACCCE0;
-    }
+    margin-top: 200px;
+}
 
 .page4 .box .title{
     font-size: 32px;
@@ -53,7 +56,7 @@ h1, p{
     margin-left: 30px;
 }
 
-.underline1::after {
+/* .underline1::after {
   content: '';
   display: inline-block;
   width: 200px;
@@ -67,7 +70,7 @@ h1, p{
   width: 160px; 
   border-bottom: 1px solid #fff;
   margin-left: 10px; 
-}
+} */
 
 .page4 .box .btn1{
     font-size: 18px;
@@ -91,16 +94,36 @@ h1, p{
     width: 55px;
     height: 55px;
     overflow: hidden;
-    position: fixed; /* 固定位置 */
+    position: absolute; /* 固定位置 */
     top: 10px;       /* 距離頂部 10px (可調整) */
     left: 37%;      /* 距離左側 10px (可調整) */
     z-index: 1000;   /* 確保在其他內容之上 */
     width: 100px;    /* Logo 寬度 (可調整) */
-
+    transform: translateX(-120%);
 }
 
 .page4 .logo img{
     height: 100%;
     display: block;
+    position: ;
 }
 
+.underline1 input{
+    width: 200px;
+    margin-left: 10px;
+    border-bottom:1px solid #fff;
+    background-color: #ACCCE0;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+
+.underline2 input{
+    width: 160px;
+    margin-left: 10px;
+    border-bottom:1px solid #fff;
+    background-color: #ACCCE0;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
